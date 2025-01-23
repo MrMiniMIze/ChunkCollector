@@ -1,0 +1,17 @@
+# =========================
+#   ChunkCollector Messages
+# =========================
+
+messages:
+  no-permission: "&cYou do not have permission to do that."
+  already-has-collector: "&cThis chunk already has a collector!"
+  collector-placed: "&aChunk Collector placed successfully."
+  collector-broken: "&eYou broke a Chunk Collector."
+  not-owner: "&cYou are not the owner of this collector."
+  collector-opened: "&aOpening your Chunk Collector..."
+  reload-complete: "&aChunkCollector configuration reloaded."
+  invalid-command: "&cInvalid subcommand. Use /chunkcollector help for options."
+
+  # Debugging messages
+  collector-loaded: "&eLoaded collector for chunk &7[%chunk_x%, %chunk_z%]."
+  collector-unloaded: "&eUnloaded collector for chunk &7[%chunk_x%, %chunk_z%]."

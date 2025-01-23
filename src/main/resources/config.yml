@@ -1,0 +1,28 @@
+# =========================
+#   ChunkCollector Config
+# =========================
+
+# I let people configure the number of rows the collector's inventory will have.
+# Valid rows: 1-6
+collector-inventory-rows: 1
+
+# This is a boolean for partial collectors (currently unused in this example).
+allow-partial-collectors: false
+
+# I offset the hologram by this many blocks above the collector block.
+hologram-offset: 1.5
+
+# I let the user configure how frequently (in minutes) data should autosave.
+# Set to 0 to disable.
+autosave-interval-minutes: 5
+
+# Here is the custom item that acts as a Chunk Collector in the game.
+collector-item:
+  name: "&aChunk Collector"
+  lore:
+    - "&7Place this in a chunk to collect drops."
+  material: CHEST  # I default to a CHEST, but players can change it.
+
+# =========================
+#   End of Config
+# =========================

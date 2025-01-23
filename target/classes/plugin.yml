@@ -1,0 +1,13 @@
+name: ChunkCollector
+version: 1.0.0
+main: me.minimize.chunkcollector.ChunkCollector
+author: minimize
+description: A plugin that collects mob drops in a chunk-based collector.
+
+# I'm registering an example command here
+commands:
+  chunkcollector:
+    description: Primary command for chunk collectors.
+    usage: /<command> [subcommand]
+    permission: chunkcollector.admin
+    permission-message: "&cYou do not have permission to use this command."
