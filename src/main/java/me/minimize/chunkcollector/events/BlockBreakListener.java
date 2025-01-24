@@ -12,8 +12,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 
 /**
- * If the broken block is exactly the collector's chest, we remove the collector,
- * but only if the breaker is the owner.
+ * If the broken block is exactly the collector's chest,
+ * I remove the collector from memory/data, ensuring
+ * that the hologram is also removed.
  */
 public class BlockBreakListener implements Listener {
 
@@ -47,7 +48,8 @@ public class BlockBreakListener implements Listener {
                 return;
             }
 
-            // Remove the collector
+            // Remove the collector (this should also remove the hologram,
+            // because removeCollector() calls HologramManager.removeHologram).
             collectorManager.removeCollector(collector);
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',
                     ConfigUtils.getMessage("collector-broken")));
